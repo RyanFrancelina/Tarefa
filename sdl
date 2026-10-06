@@ -1,0 +1,5 @@
+É um robô autônomo projetado para percorrer um trajeto guiado por faixas no chão de modo que seus sensores
+e placas sejam programados para largar de forma manual, mas seguir e parar em uma área demarcada de maneira automática
+normalmente no menor tempo possível. Utiliza de sensores ópticos para identificar o traçado a ser percorrido,
+uma placa controladora que recebe os dados dos sensores para processar e enviar as correções necessárias para os 
+motores. 

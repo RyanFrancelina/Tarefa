@@ -1,5 +1,8 @@
 É um robô autônomo projetado para percorrer um trajeto guiado por faixas no chão de modo que seus sensores
 e placas sejam programados para largar de forma manual, mas seguir e parar em uma área demarcada de maneira automática
-normalmente no menor tempo possível. Utiliza de sensores ópticos para identificar o traçado a ser percorrido,
-uma placa controladora que recebe os dados dos sensores para processar e enviar as correções necessárias para os 
-motores. 
+normalmente no menor tempo possível. Os sensores ópticos são responsáveis por identificar as faixas ou o traçado presente no chão, 
+eles realizam a leitura do caminho e enviam essas informações para a placa controladora, permitindo que o robô reconheça sua posição em 
+relação à trajetória que deve seguir. A placa controladora é responsável por receber e processar os dados enviados pelos sensores. A partir dessas informações, 
+ela determina quais correções devem ser realizadas no movimento do robô e envia os comandos necessários para os motores, fazendo com que ele consiga 
+se manter sobre o trajeto. Os motores são os componentes responsáveis pelo movimento do robô. Eles recebem os comandos da placa 
+controladora e realizam os ajustes de velocidade e direção necessários para que o robô siga corretamente pelas faixas e consiga completar o percurso.

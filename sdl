@@ -20,19 +20,16 @@ capacidade de navegação autônoma do robô.
 Durante o percurso, seus sensores devem identificar continuamente a posição da linha, enquanto a placa controladora realiza os ajustes necessários nos motores para 
 manter o robô sobre a trajetória. Ao completar o circuito, o robô deve parar automaticamente dentro da área de partida e chegada, permanecendo sobre a linha por pelo 
 menos dois segundos. Somente quando todas essas condições forem atendidas a volta será considerada válida.
-
   Um erro ocorre quando o robô deixa de cumprir alguma das condições estabelecidas pelo regulamento, caso seu corpo saia completamente de cima da linha branca, a 
 volta será invalidada. A tentativa também será invalidada se alguém tocar no robô sem autorização do juiz após o início da prova, ou se o robô não concluir o 
 percurso e parar automaticamente na área de partida e chegada pelo tempo mínimo exigido. Além disso, o robô deve percorrer o circuito no sentido correto e não 
 pode ser controlado externamente durante a tentativa, exceto nas situações permitidas pelo regulamento. Essas regras garantem que o resultado seja obtido pela 
 capacidade de navegação autônoma do robô.
-
   De acordo com o regulamento da Comunidade dos Seguidores de Linha do Brasil, o robô não pode ultrapassar 250 mm de comprimento, 250 mm de largura e 200 mm de altura,
 e suas dimensões não podem ser alteradas durante a tomada de tempo. O robô deve ser totalmente autônomo e possuir todos os componentes embarcados, não podendo 
 depender de controle externo para executar o percurso. Entretanto, o regulamento não estabelece uma quantidade máxima específica de sensores, motores ou 
 componentes eletrônicos, permitindo que cada equipe desenvolva sua própria solução tecnológica, desde que respeite as demais exigências. 
 Também são permitidos métodos de empuxo que aumentem a força normal em relação ao solo, como turbinas e ventoinhas, desde que não utilizem sucção.
-
   A avaliação é baseada principalmente no tempo necessário para completar uma volta válida. Cada robô pode realizar três tentativas consecutivas por tomada de tempo,
 respeitando o limite máximo de cinco minutos para cada tomada. O tempo oficial é registrado quando o robô completa o percurso de maneira válida, e o menor 
 tempo obtido entre as tentativas válidas é utilizado como referência para sua classificação. Dessa forma, o robô vencedor é aquele que consegue completar a volta 
@@ -43,7 +40,6 @@ realizar as correções necessárias em sua trajetória. Quando a linha está ce
 caso o robô se desvie para um dos lados, a placa controladora modifica a velocidade dos motores, fazendo com que ele realize uma curva e retorne à trajetória. 
 Na situação da Eletrogate, essa lógica pode ser desenvolvida por meio de condições simples no código. Já no Kenlinha, a utilização de oito sensores frontais 
 permite identificar o desvio com maior precisão, possibilitando correções mais graduais e eficientes.
-
   O cálculo de correção ocorre na placa controladora, que é responsável por processar as informações recebidas pelos sensores e determinar quais ações devem ser 
 realizadas pelos motores. No projeto da Eletrogate, essa função é executada pelo Arduino Uno R3, enquanto no Kenlinha ela é realizada pelo ESP32-S3, após 
 interpretar a posição da linha, o microcontrolador envia os comandos para a ponte H, responsável por controlar a velocidade e o sentido de rotação dos 
@@ -54,7 +50,6 @@ posições. Por outro lado, o Kenlinha utiliza um módulo frontal com oito senso
 estimar com maior precisão a distância entre a linha e o centro do robô. Essa configuração favorece a realização de curvas e correções mais precisas, desde que os 
 sensores estejam adequadamente posicionados e que o programa consiga interpretar suas leituras. Entretanto, uma quantidade maior de sensores não garante,
 por si só, um desempenho superior, pois os resultados também dependem da programação e da calibração do sistema.
-
   Os motores influenciam diretamente a velocidade, a força de movimentação e a capacidade de realizar correções durante o percurso. No projeto da Eletrogate, os 
 motores do kit 2WD são utilizados para movimentar o robô de maneira relativamente simples, enquanto no Kenlinha são previstos dois motores de corrente contínua de 
 3000 RPM e 6 V, equipados com encoders. Esses encoders permitem obter informações sobre a rotação dos motores, contribuindo para o controle da velocidade e para a 

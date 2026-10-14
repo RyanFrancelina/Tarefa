@@ -35,7 +35,7 @@ respeitando o limite máximo de cinco minutos para cada tomada. O tempo oficial 
 tempo obtido entre as tentativas válidas é utilizado como referência para sua classificação. Dessa forma, o robô vencedor é aquele que consegue completar a volta 
 válida no menor tempo. Entretanto, a organização pode estabelecer previamente critérios adicionais de avaliação, desde que sejam informados aos participantes, 
 conforme as regras da competição.
-A lógica mais simples consiste em utilizar os sensores ópticos para identificar a posição da linha em relação ao robô e, a partir dessas informações, 
+  A lógica mais simples consiste em utilizar os sensores ópticos para identificar a posição da linha em relação ao robô e, a partir dessas informações, 
 realizar as correções necessárias em sua trajetória. Quando a linha está centralizada, os motores recebem comandos para manter o movimento em frente, 
 caso o robô se desvie para um dos lados, a placa controladora modifica a velocidade dos motores, fazendo com que ele realize uma curva e retorne à trajetória. 
 Na situação da Eletrogate, essa lógica pode ser desenvolvida por meio de condições simples no código. Já no Kenlinha, a utilização de oito sensores frontais 
@@ -44,7 +44,7 @@ permite identificar o desvio com maior precisão, possibilitando correções mai
 realizadas pelos motores. No projeto da Eletrogate, essa função é executada pelo Arduino Uno R3, enquanto no Kenlinha ela é realizada pelo ESP32-S3, após 
 interpretar a posição da linha, o microcontrolador envia os comandos para a ponte H, responsável por controlar a velocidade e o sentido de rotação dos 
 motores. Dessa forma, o robô consegue ajustar seu movimento continuamente, procurando permanecer sobre o trajeto determinado.
-A quantidade de sensores é relevante porque influencia a precisão com que o robô identifica a posição da linha. No projeto da Eletrogate, são utilizados dois 
+  A quantidade de sensores é relevante porque influencia a precisão com que o robô identifica a posição da linha. No projeto da Eletrogate, são utilizados dois 
 sensores infravermelhos, que permitem reconhecer desvios básicos e realizar correções a partir da presença ou ausência da linha em suas 
 posições. Por outro lado, o Kenlinha utiliza um módulo frontal com oito sensores QRE1113, possibilitando obter informações de diferentes pontos da trajetória e 
 estimar com maior precisão a distância entre a linha e o centro do robô. Essa configuração favorece a realização de curvas e correções mais precisas, desde que os 

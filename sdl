@@ -65,54 +65,45 @@ Portanto, a escolha adequada das rodas contribui para que os comandos enviados p
 permitindo que o robô complete o percurso de maneira eficiente.
 
 1. O que é tensão elétrica?
-
 A tensão elétrica, também conhecida como diferença de potencial elétrico, é a grandeza responsável por impulsionar o movimento dos elétrons em um circuito. 
 Ela representa a diferença de energia elétrica entre dois pontos, fazendo com que a corrente possa circular quando existe um caminho fechado, tendo como unidade 
 de medida volts (V).
 
 2. O que é corrente elétrica?
-
 A corrente elétrica é o movimento ordenado de cargas elétricas através de um material condutor, como os fios de cobre. Esse movimento acontece devido à diferença 
 de potencial elétrico aplicada ao circuito. Sua unidade de medida é o Ampère (A), sendo utilizada para indicar a quantidade de carga elétrica que atravessa 
 determinado ponto em um intervalo de tempo.
 
 3. O que é resistência elétrica?
-
 A resistência elétrica é a capacidade que um material possui de dificultar a passagem da corrente elétrica. Ela depende de fatores como o tipo de material, 
 seu comprimento, sua espessura e sua temperatura. Sua unidade de medida é o Ohm (Ω). Nos circuitos, os resistores são componentes utilizados justamente para 
 controlar a passagem da corrente, evitando que outros componentes recebam uma corrente maior do que suportam.
 
 4. O que é potência elétrica?
-
 A potência elétrica representa a quantidade de energia elétrica consumida ou transformada por um componente em determinado intervalo de tempo. 
 Por exemplo, em um circuito, um motor transforma energia elétrica em movimento, enquanto uma lâmpada transforma parte dessa energia em luz e calor,
 sua unidade de medida é o Watt (W). Quanto maior a potência, maior é a quantidade de energia transformada por segundo.
 
 5. O que é GND?
-
 GND é a abreviação de Ground, que significa terra em inglês. Nos circuitos eletrônicos, ele representa um ponto de referência de tensão, geralmente 
 considerado como 0 V. Também é utilizado como caminho de retorno da corrente elétrica para a fonte de alimentação, permitindo fechar o circuito, em
 projetos com Arduino e outros microcontroladores, é importante conectar os GNDs dos componentes que precisam compartilhar a mesma referência elétrica.
 
 6. O que significa corrente contínua (CC)?
-
 A corrente contínua, também conhecida como CC ou DC (Direct Current), é aquela em que o fluxo de cargas elétricas mantém sempre o mesmo sentido. Ela é 
 encontrada em fontes de alimentação, pilhas e baterias, sendo bastante utilizada em circuitos eletrônicos e projetos de robótica. Diferentemente da corrente 
 alternada, que muda periodicamente de sentido, a corrente contínua mantém sua polaridade, possuindo um polo positivo e outro negativo.
 
 7. O que é a Lei de Ohm?
-
 A Lei de Ohm estabelece a relação entre tensão elétrica, corrente e resistência em um circuito. Ela demonstra que a corrente elétrica é 
 diretamente proporcional à tensão e inversamente proporcional à resistência, ou seja, quanto maior a tensão, maior tende a ser a corrente, enquanto o aumento 
 da resistência provoca a diminuição da corrente.
 
 8. Como calcular um resistor para um LED?
-
 O resistor utilizado em um LED tem a função de limitar a corrente elétrica que passa pelo componente, evitando que ele receba uma corrente excessiva e acabe 
 queimando. Para calcular o valor adequado, é necessário conhecer a tensão da fonte de alimentação, a tensão de funcionamento do LED e a corrente desejada.
 
 9. Qual a diferença entre circuito em série e paralelo?
-
 Um circuito em série é aquele em que os componentes são conectados em sequência, formando um único caminho para a passagem da corrente elétrica. Nesse tipo 
 de ligação, a corrente que atravessa todos os componentes é a mesma, enquanto a tensão é dividida entre eles. Uma característica desse circuito é que, caso um 
 dos componentes seja interrompido, todo o circuito deixa de funcionar. Já no circuito em paralelo, os componentes são conectados em caminhos diferentes, formando 
